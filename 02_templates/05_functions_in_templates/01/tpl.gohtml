@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>functions in templates</title>
+</head>
+<body>
+<h3>Wisdom</h3>
+{{range .Wisdom}}
+{{uc .Name}}
+{{end}}
+<hr>
+{{range .Wisdom}}
+{{ft .Name}}
+{{end}}
+<hr>
+<h3>Transport</h3>
+{{range .Transport}}
+{{uc .Manufacturer}}
+{{end}}
+<hr>
+{{range .Transport}}
+{{ft .Manufacturer}}
+{{end}}
+
+</body>
+</html>
