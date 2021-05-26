@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Golang Restaurant</title>
+</head>
+<body>
+<h1 style="text-align:center;">Golang Restaurant Menu</h1>
+<hr>
+<h2 style="text-align:center;">Breakfast</h2>
+{{range .Breakfast}}
+<h3 style="text-align:center;">{{.Name}} - S${{.Price}}</h3>
+<h4 style="text-align:center;">{{.Desc}}</h4>
+<br>
+{{end}}
+<hr>
+<h2 style="text-align:center;">Lunch</h2>
+{{range .Lunch}}
+<h3 style="text-align:center;">{{.Name}} - S${{.Price}}</h3>
+<h4 style="text-align:center;">{{.Desc}}</h4>
+<br>
+{{end}}
+<hr>
+<h2 style="text-align:center;">Dinner</h2>
+{{range .Dinner}}
+<h3 style="text-align:center;">{{.Name}} - S${{.Price}}</h3>
+<h4 style="text-align:center;">{{.Desc}}</h4>
+<br>
+{{end}}
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel California</title>
+</head>
+<body>
+<h1>Hotels in California</h1>
+<hr>
+<h2>Region: Central</h2>
+{{range .}}
+{{if eq .Region "Central"}}
+    <h3>Name: {{.Name}}</h3>
+    <h3>Address: {{.Address}}</h3>
+    <h3>City: {{.City}}</h3>
+    <h3>Zip: {{.Zip}}</h3>
+    <br><br>
+{{end}}
+{{end}}
+<hr>
+<h2>Region: Northern</h2>
+{{range .}}
+{{if eq .Region "Northern"}}
+    <h3>Name: {{.Name}}</h3>
+    <h3>Address: {{.Address}}</h3>
+    <h3>City: {{.City}}</h3>
+    <h3>Zip: {{.Zip}}</h3>
+    <br><br>
+{{end}}
+{{end}}
+<hr>
+<h2>Region: Southern</h2>
+{{range .}}
+{{if eq .Region "Southern"}}
+    <h3>Name: {{.Name}}</h3>
+    <h3>Address: {{.Address}}</h3>
+    <h3>City: {{.City}}</h3>
+    <h3>Zip: {{.Zip}}</h3>
+    <br><br>
+{{end}}
+{{end}}
+</body>
+</html>
